@@ -1,12 +1,12 @@
-{
+ {
   "defaultConnection": "default",
   "connections": {
     "default": {
       "connector": "bookshelf",
       "settings": {
-        "client": "postgress",
-        "host": "localhost",
-        "port": "3306",
+        "client": "pg",
+        "host": "127.0.0.1",
+        "port": "5433",
         "database": "strapiengineer",
         "username": "postgres",
         "password": "mysql"
