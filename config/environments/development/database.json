@@ -4,11 +4,11 @@
     "default": {
       "connector": "bookshelf",
       "settings": {
-        "client": "mysql",
+        "client": "postgress",
         "host": "localhost",
         "port": "3306",
         "database": "strapiengineer",
-        "username": "root",
+        "username": "postgres",
         "password": "mysql"
       },
       "options": {}
