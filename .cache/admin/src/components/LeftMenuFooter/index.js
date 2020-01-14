@@ -52,8 +52,7 @@ function LeftMenuFooter({ version, ...rest }) {
           RETRO
         </a>
       
-         
-        </a>
+      
       </div>
     </Wrapper>
   );

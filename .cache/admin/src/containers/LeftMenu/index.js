@@ -1,7 +1,7 @@
 /*
  *
  * LeftMenu
- *
+ * logo_retrorabbit
  */
 
 import React from 'react';
