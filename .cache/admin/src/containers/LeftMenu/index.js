@@ -14,9 +14,7 @@ import Wrapper from './Wrapper';
 function LeftMenu(props) {
   return (
     <Wrapper>
-      <LeftMenuHeader key="header" {...props} />
-      <LeftMenuLinkContainer {...props} />
-      <LeftMenuFooter key="footer" {...props} />
+     
     </Wrapper>
   );
 }
