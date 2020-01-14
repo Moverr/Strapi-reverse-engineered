@@ -49,7 +49,7 @@ function LeftMenuFooter({ version, ...rest }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Strapi
+          RETRO
         </a>
         &nbsp;
         <a
