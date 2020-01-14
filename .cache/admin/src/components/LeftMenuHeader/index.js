@@ -13,7 +13,7 @@ function LeftMenuHeader() {
   return (
     <Wrapper>
       <Link to="/" className="leftMenuHeaderLink">
-        <span className="projectName" />
+        KARMA IS A BITCH
       </Link>
     </Wrapper>
   );

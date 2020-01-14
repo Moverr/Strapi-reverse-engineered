@@ -45,20 +45,14 @@ function LeftMenuFooter({ version, ...rest }) {
         <FormattedMessage {...messages.poweredBy} key="poweredBy" />
         <a
           key="website"
-          href="https://strapi.io"
+          href="https://github.com/Moverr"
           target="_blank"
           rel="noopener noreferrer"
         >
           RETRO
         </a>
-        &nbsp;
-        <a
-          href={`https://github.com/strapi/strapi/releases/tag/v${version}`}
-          key="github"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          v{version}
+      
+         
         </a>
       </div>
     </Wrapper>
