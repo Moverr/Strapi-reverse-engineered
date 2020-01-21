@@ -4,8 +4,10 @@ import { Chart } from 'react-charts'
 
 export default class componentName extends Component {
   constructor() {
-
+    super();
   }
+
+  
   chart = () => {
 
     const data = React.useMemo(
@@ -43,8 +45,7 @@ export default class componentName extends Component {
             height: '300px'
           }}
         >
-          {/* <Chart data={data} axes={axes} />
-           */}
+           <h1> MOVER</h1>
         </div>
       </div>
     )
