@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
- 
+
+import { Container, Row, Col } from 'reactstrap';
+
+
 import ColumnChartwithIndexlabel from "../../charts/overview/Column Chart with Indexlabel";
 import ChartWithCrosshair from "../../charts/overview/Chart with Crosshair";
 import ChartWithZoom from "../../charts/overview/Chart with Zoom";
@@ -60,7 +63,6 @@ import DynamicLineChart from "../../charts/dynamic charts/Dynamic Line Chart";
 import DynamicColumnChart from "../../charts/dynamic charts/Dynamic Column Chart";
 import DynamicMultiSeriesChart from "../../charts/dynamic charts/Dynamic Multi Series Chart";
 
-import DynamicMultiSeriesChart from "../../charts/dynamic charts";
 
 
 
@@ -69,18 +71,36 @@ export default class componentName extends Component {
     super(props)
   }
 
-   
+
 
   render() {
     return (
       <div>
         <div
           style={{
-            width: '400px',
+            width: '1000px',
             height: '300px'
           }}
         >
-         <h1> HOME SWEAT HOME </h1>
+
+          <Container>
+            <Row>
+              <Col><ChartWithZoom /></Col>
+              <Col> <AnimatedChart /></Col>
+            </Row>
+            <Row>
+              <Col><ChartWithCrosshair /></Col>
+              <Col>  <ColumnChartwithIndexlabel /></Col>
+              <Col><ColumnChart /></Col>
+            </Row>
+          </Container>
+
+         
+
+
+          
+          
+          
         </div>
       </div>
     )
