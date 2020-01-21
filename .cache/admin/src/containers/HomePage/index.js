@@ -130,7 +130,7 @@ export default class componentName extends Component {
         >
           <h1> MOVER</h1>
 
-          <ColumnChartwithIndexlabel/>
+          {/* <ColumnChartwithIndexlabel/> */}
         </div>
       </div>
     )
