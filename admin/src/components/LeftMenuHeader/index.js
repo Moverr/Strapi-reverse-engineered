@@ -12,6 +12,8 @@ import Wrapper from './Wrapper';
 
 
 function LeftMenuHeader() {
+    document.title = "Retro Rabbit East Africa";
+
     return (
         <Wrapper>
             <Link to="/" className="leftMenuHeaderLink">
