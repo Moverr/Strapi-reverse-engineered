@@ -26,6 +26,9 @@ const Wrapper = styled.div`
     background-color:#fff !important;
     padding-left:5px !important;
 
+    padding-right: 60px;
+    padding-top: 20px;
+    
     // background-image: url(${Logo});
     // background-repeat: no-repeat;
     // background-position: center center;
