@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-// import Logo from '../../assets/images/banner.svg';
+import Logo from '../../assets/images/logo-strapi.png';
 
 const Wrapper = styled.div`
   background-color: #007eff;
@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 
   .leftMenuHeaderLink {
     &:hover {
-    //   text-decoration: none;
+      text-decoration: none;
     }
   }
 
@@ -18,14 +18,15 @@ const Wrapper = styled.div`
     height: 100%;
     width: 100%;
     text-align: center;
-    
+    height: ${props => props.theme.main.sizes.header.height};
     vertical-align: middle;
     font-size: 2rem;
     letter-spacing: 0.2rem;
-   
-    font-size:20px;
+    color: $white;
+    background-color:#fff !important;
+    padding-left:5px !important;
 
-    // background-image: url(${'./assets/images/logo_strapi.png'});
+    // background-image: url(${Logo});
     // background-repeat: no-repeat;
     // background-position: center center;
     // background-size: auto 3rem;
