@@ -8,10 +8,14 @@ const Wrapper = styled.div`
   height: ${props => props.theme.main.sizes.header.height};
 
   .leftMenuHeaderLink {
+    text-decoration: none;
+    color:#292b2c;
     &:hover {
       text-decoration: none;
     }
+    
   }
+ 
 
   .projectName {
     display: block;
