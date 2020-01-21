@@ -14,7 +14,7 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
 
-import {  Route,NavLink,  BrowserRouter} from "react-router-dom";
+import { Route, NavLink, BrowserRouter } from "react-router-dom";
 import ApexCharts from 'apexcharts';
 
 
@@ -25,32 +25,37 @@ export default class componentName extends Component {
   constructor() {
     super();
   }
- 
 
-    options = {
+
+  options = {
     chart: {
       type: 'line'
     },
     series: [{
       name: 'sales',
-      data: [30,40,35,50,49,60,70,91,125]
+      data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
     }],
     xaxis: {
-      categories: [1991,1992,1993,1994,1995,1996,1997, 1998,1999]
+      categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
     }
   }
 
-  
+  renderChart = () => {
+    let chart = new ApexCharts(document.querySelector("#chart"), options)
+
+    chart.render();
+  }
 
   render() {
+
     return (
       <div>
-        <div    style={{  width: '400px',  height: '300px' }} >
+        <div style={{ width: '400px', height: '300px' }} >
           <h1> MOVER</h1>
-           {
-             chart = new ApexCharts(document.querySelector("#chart"), options);
-             chart.render();                      
-           } 
+          {
+            this.renderChart()
+
+          }
         </div>
       </div>
     )
